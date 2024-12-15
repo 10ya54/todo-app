@@ -1,0 +1,24 @@
+{
+  "name": "todo-app",
+  "version": "1.0.0",
+  "description": "JavaのTODOアプリ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "npx tailwindcss -i ./src/main/resources/static/input.css -o ./src/main/resources/static/output.css --watch\n"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/10ya54/todo-app.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/10ya54/todo-app/issues"
+  },
+  "homepage": "https://github.com/10ya54/todo-app#readme",
+  "devDependencies": {
+    "tailwindcss": "^3.4.16"
+  }
+}
