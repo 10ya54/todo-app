@@ -17,8 +17,5 @@
   "bugs": {
     "url": "https://github.com/10ya54/todo-app/issues"
   },
-  "homepage": "https://github.com/10ya54/todo-app#readme",
-  "devDependencies": {
-    "tailwindcss": "^3.4.16"
-  }
+  "homepage": "https://github.com/10ya54/todo-app#readme"
 }
