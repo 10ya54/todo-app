@@ -1,4 +1,4 @@
-package com.example.todo_app.app;
+package com.example.todo_app.app.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -10,9 +10,5 @@ public class IndexController {
     public String index(Model model) {
         model.addAttribute("test", "test");
         return "index";
-    }
-    @GetMapping("/login")
-    public String login() {
-        return "login";
     }
 }

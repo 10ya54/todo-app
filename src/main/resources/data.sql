@@ -1,0 +1,1 @@
+INSERT INTO users (user_id, user_name, user_email, user_password, created_at) VALUES ('u001', '山田太郎', 'yamada@co.jp', 'password', '2020-01-01 00:00:00');
