@@ -1,21 +1,24 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link th:href="@{/css/bootstrap.min.css}" rel="stylesheet">
     <title>ログイン画面</title>
 </head>
 <body>
     <h1>ログイン画面</h1>
-    <form action="/login" method="post">
+    <form th:action="@{/login}" method="post" th:object="${loginForm}">
         <div>
-            <label for="username">ユーザ名</label>
-            <input type="text" id="username" name="username">
+            <label>ユーザID</label>
+            <input type="text" th:field="*{userId}">
         </div>
         <div>
-            <label for="password">パスワード</label>
-            <input type="password" id="password" name="password">
+            <label>パスワード</label>
+            <input type="password" th:field="*{password}">
         </div>
         <button type="submit">ログイン</button>
     </form>
+    <script th:src="@{/js/bootstrap.bundle.min.js}"></script>
 </body>
 </html>
