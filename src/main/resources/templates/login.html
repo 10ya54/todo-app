@@ -7,18 +7,19 @@
     <title>ログイン画面</title>
 </head>
 <body>
-    <h1>ログイン画面</h1>
-    <form th:action="@{/login}" method="post" th:object="${loginForm}">
-        <div>
-            <label>ユーザID</label>
-            <input type="text" th:field="*{userId}">
-        </div>
-        <div>
-            <label>パスワード</label>
-            <input type="password" th:field="*{password}">
-        </div>
-        <button type="submit">ログイン</button>
-    </form>
-    <script th:src="@{/js/bootstrap.bundle.min.js}"></script>
+<h1>ログイン画面</h1>
+<span th:text="${errorMsg}"></span>
+<form th:action="@{/login}" method="post" th:object="${loginForm}">
+    <div>
+        <label>ユーザID</label>
+        <input type="text" th:field="*{userId}">
+    </div>
+    <div>
+        <label>パスワード</label>
+        <input type="password" th:field="*{password}">
+    </div>
+    <button type="submit">ログイン</button>
+</form>
+<script th:src="@{/js/bootstrap.bundle.min.js}"></script>
 </body>
 </html>

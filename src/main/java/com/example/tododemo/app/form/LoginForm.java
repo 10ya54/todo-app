@@ -1,4 +1,4 @@
-package com.example.todo_app.app.form;
+package com.example.tododemo.app.form;
 
 import lombok.Data;
 

@@ -1,14 +1,14 @@
-package com.example.todo_app.domain.model;
+package com.example.tododemo.domain.model;
 
 import lombok.Data;
 
-import java.sql.Timestamp;
+import java.time.LocalDateTime;
 
 @Data
 public class User {
     private String userId;
-    private String username;
+    private String userName;
     private String userEmail;
     private String userPassword;
-    private Timestamp createdAt;
+    private LocalDateTime createdAt;
 }
